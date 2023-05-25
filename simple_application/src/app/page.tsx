@@ -1,6 +1,9 @@
-import { FunctionComponent } from "react";
+import Image from "next/image";
 
-const InterviewDesign: FunctionComponent = () => {
+import arrowLeft from "@img/arrowleft.svg";
+import greenCheck from "@img/greencheck.svg";
+
+export default function Home() {
   return (
     <div className="relative bg-ghostwhite w-full h-[1181px] text-left text-xs text-gray font-plus-jakarta-sans">
       <div className="absolute top-[160px] left-[278px] w-[380px] h-[63px]">
@@ -34,10 +37,10 @@ const InterviewDesign: FunctionComponent = () => {
         </div>
       </div>
       <div className="absolute top-[120px] left-[278px] w-[53px] h-5 flex flex-row items-center justify-start gap-[8px]">
-        <img
+        <Image
           className="relative w-4 h-4 overflow-hidden shrink-0"
           alt=""
-          src="/arrowleft.svg"
+          src={arrowLeft}
         />
         <div className="relative leading-[20px]">Back</div>
       </div>
@@ -142,19 +145,17 @@ const InterviewDesign: FunctionComponent = () => {
         <div className="absolute top-[192px] left-[24px] [text-decoration:underline] leading-[20px] font-semibold">
           View all votes
         </div>
-        <img
+        <Image
           className="absolute top-[84px] left-[845px] w-3 h-3"
           alt=""
-          src="/group-769.svg"
+          src={greenCheck}
         />
-        <img
+        <Image
           className="absolute top-[140px] left-[845px] w-3 h-3"
           alt=""
-          src="/group-769.svg"
+          src={greenCheck}
         />
       </div>
     </div>
   );
-};
-
-export default InterviewDesign;
+}
