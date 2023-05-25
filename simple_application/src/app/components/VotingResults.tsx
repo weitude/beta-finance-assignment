@@ -72,12 +72,12 @@ const VotingResults = () => {
       </div>
       <Image
         className="absolute top-[84px] left-[845px] w-3 h-3"
-        alt=""
+        alt="greenCheck"
         src={greenCheck}
       />
       <Image
         className="absolute top-[140px] left-[845px] w-3 h-3"
-        alt=""
+        alt="greenCheck"
         src={greenCheck}
       />
     </div>

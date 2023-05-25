@@ -7,7 +7,7 @@ const Title = () => {
       <div className="absolute top-[120px] w-[53px] h-5 flex flex-row items-center justify-start gap-[8px]">
         <Image
           className="relative w-4 h-4 overflow-hidden shrink-0"
-          alt=""
+          alt="arrowLeft"
           src={arrowLeft}
         />
         <div className="relative leading-[20px] hover:cursor-pointer">Back</div>
