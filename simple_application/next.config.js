@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 // const isProd = process.env.NEXT_ENV === "production";
-const isProd = true;
+const isProd = false;
 
 const repo = "beta-finance-assignment";
 const basePath = `/${repo}`;
@@ -16,6 +16,12 @@ const nextConfig = {
   output: "export",
   basePath: isProd ? basePath : "",
   assetPrefix: isProd ? assetPrefix : "",
+  experimental: {
+    appDir: true,
+  },
+  compiler: {
+    styledComponents: true,
+  },
 };
 
 module.exports = nextConfig;
