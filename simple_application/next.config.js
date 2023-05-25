@@ -1,13 +1,21 @@
 /** @type {import('next').NextConfig} */
 
+// const isProd = process.env.NEXT_ENV === "production";
+const isProd = true;
+
 const repo = "beta-finance-assignment";
-const assetPrefix = `/${repo}/`;
 const basePath = `/${repo}`;
+const assetPrefix = `/${repo}/`;
+
+// console.log("process.env.NEXT_ENV", process.env.NEXT_ENV);
+// console.log("isProd", isProd);
+// console.log("basePath", basePath);
+// console.log("assetPrefix", assetPrefix);
 
 const nextConfig = {
   output: "export",
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+  basePath: isProd ? basePath : "",
+  assetPrefix: isProd ? assetPrefix : "",
 };
 
 module.exports = nextConfig;
