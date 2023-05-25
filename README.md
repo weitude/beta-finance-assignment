@@ -2,7 +2,7 @@
 
 ## Part 1: System Design
 
-Please refer to `solution.pdf` for the system design.
+Please refer to [solution.pdf](https://github.com/weitude/beta-finance-assignment/blob/main/system_design/solution.pdf) for the system design.
 
 ## Part 2: Simple Frontend Implementation
 
