@@ -24,7 +24,7 @@ jobs:
           yarn install --frozen-lockfile
           yarn build
         env:
-          NEXT_ENV: ${{ vars.NEXT_ENV }}
+          NEXT_ENV: "production"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
