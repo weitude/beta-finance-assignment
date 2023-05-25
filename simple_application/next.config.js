@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 // const isProd = process.env.NEXT_ENV === "production";
-const isProd = false;
+const isProd = true;
 
 const repo = "beta-finance-assignment";
 const basePath = `/${repo}`;
